@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F6816A2C2808521B002DB3AC /* ProfileCombinePracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6816A2B2808521B002DB3AC /* ProfileCombinePracticeApp.swift */; };
-		F6816A2E2808521B002DB3AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6816A2D2808521B002DB3AC /* ContentView.swift */; };
+		F6816A2E2808521B002DB3AC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6816A2D2808521B002DB3AC /* ProfileView.swift */; };
 		F6816A302808521C002DB3AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6816A2F2808521C002DB3AC /* Assets.xcassets */; };
 		F6816A332808521C002DB3AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6816A322808521C002DB3AC /* Preview Assets.xcassets */; };
+		F6816A3B280853B9002DB3AC /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6816A3A280853B9002DB3AC /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6816A282808521B002DB3AC /* ProfileCombinePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileCombinePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6816A2B2808521B002DB3AC /* ProfileCombinePracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCombinePracticeApp.swift; sourceTree = "<group>"; };
-		F6816A2D2808521B002DB3AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6816A2D2808521B002DB3AC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F6816A2F2808521C002DB3AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6816A322808521C002DB3AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6816A3A280853B9002DB3AC /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		F6816A2A2808521B002DB3AC /* ProfileCombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				F6816A39280853A7002DB3AC /* Extensions */,
 				F6816A2B2808521B002DB3AC /* ProfileCombinePracticeApp.swift */,
-				F6816A2D2808521B002DB3AC /* ContentView.swift */,
+				F6816A2D2808521B002DB3AC /* ProfileView.swift */,
 				F6816A2F2808521C002DB3AC /* Assets.xcassets */,
 				F6816A312808521C002DB3AC /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				F6816A322808521C002DB3AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6816A39280853A7002DB3AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6816A3A280853B9002DB3AC /* Color+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6816A2E2808521B002DB3AC /* ContentView.swift in Sources */,
+				F6816A2E2808521B002DB3AC /* ProfileView.swift in Sources */,
 				F6816A2C2808521B002DB3AC /* ProfileCombinePracticeApp.swift in Sources */,
+				F6816A3B280853B9002DB3AC /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
