@@ -48,7 +48,7 @@ struct ProfileView: View {
                     
                 }
             }
-            
+            .navigationBarHidden(true)
         }
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct ListProfileView: View {
     @StateObject var vm = ListProfileViewModel(org: MockData.testInc)
     @EnvironmentObject var modalAction : ModalAction
+    @State var navAction = false
     
     var body: some View {
         NavigationView{
@@ -21,19 +22,17 @@ struct ListProfileView: View {
                 .font(.largeTitle)
                 List{
                     ForEach(vm.organization.people, id:\.id) { personObject in
-                        Text(personObject.name)
-                            .font(.title3)
-                            .sheet(isPresented: $modalAction.showSheet) {
-                                ProfileView(vm: ProfileViewModel(person: personObject))
-                            }
-                            .onTapGesture {
-                                modalAction.showSheet.toggle()
-                            }
+                        NavigationLink (destination:ProfileView(vm: ProfileViewModel(person: personObject)), isActive: $navAction
+                            ,label: {
+                            Text(personObject.name)
+                                .font(.title3)
+                        })
+
                     }
                 }
                 
             }
-            
+            .navigationBarHidden(true)
             
         }
     }
