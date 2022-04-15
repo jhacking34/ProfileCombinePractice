@@ -11,7 +11,8 @@ import SwiftUI
 struct ProfileCombinePracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ProfileView()
+            ListProfileView()
+                .environmentObject(ModalAction())
         }
     }
 }
